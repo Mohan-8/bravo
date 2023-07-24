@@ -11,7 +11,7 @@ root.render(
     <DAppProvider config={{}}>
       <Router>
         <Routes>
-          <Route path="/" element={<App/>} />
+          <Route path="/bravo" element={<App/>} />
         </Routes>
       </Router>
     </DAppProvider>
