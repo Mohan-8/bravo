@@ -83,6 +83,13 @@ const timelineData = [
       tag: 'TO DO',
       color: '#e17b77'
     },
+  },{
+    text: 'Use case 2 & Mega Burn',
+    date: 'Soon',
+    category: {
+      tag: 'TO DO',
+      color: '#e17b77'
+    },
   }
 ]
 
