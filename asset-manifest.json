@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/bravo/static/css/main.22b891d8.css",
-    "main.js": "/bravo/static/js/main.e0bf7a7b.js",
-    "static/media/profilebg1.png": "/bravo/static/media/profilebg1.78c3f2d177cf883621e0.png",
-    "static/media/your-logo.png": "/bravo/static/media/your-logo.78c3f2d177cf883621e0.png",
-    "static/media/gold.jpg": "/bravo/static/media/gold.0bf214199d13a01dd5fc.jpg",
-    "static/media/infantry.jpg": "/bravo/static/media/infantry.9f9700fc76e2cd4e6137.jpg",
-    "static/media/bg3.jpg": "/bravo/static/media/bg3.0974be5f78baac21d7ef.jpg",
-    "static/media/ghost.jpg": "/bravo/static/media/ghost.4ead3f315915cc54e5f9.jpg",
-    "static/media/diamond.jpg": "/bravo/static/media/diamond.b7c720065cb57da0d177.jpg",
-    "index.html": "/bravo/index.html",
-    "main.22b891d8.css.map": "/bravo/static/css/main.22b891d8.css.map",
-    "main.e0bf7a7b.js.map": "/bravo/static/js/main.e0bf7a7b.js.map"
+    "main.css": "/static/css/main.22b891d8.css",
+    "main.js": "/static/js/main.cab5463c.js",
+    "static/media/profilebg1.png": "/static/media/profilebg1.78c3f2d177cf883621e0.png",
+    "static/media/your-logo.png": "/static/media/your-logo.78c3f2d177cf883621e0.png",
+    "static/media/gold.jpg": "/static/media/gold.0bf214199d13a01dd5fc.jpg",
+    "static/media/infantry.jpg": "/static/media/infantry.9f9700fc76e2cd4e6137.jpg",
+    "static/media/bg3.jpg": "/static/media/bg3.0974be5f78baac21d7ef.jpg",
+    "static/media/ghost.jpg": "/static/media/ghost.4ead3f315915cc54e5f9.jpg",
+    "static/media/diamond.jpg": "/static/media/diamond.b7c720065cb57da0d177.jpg",
+    "index.html": "/index.html",
+    "main.22b891d8.css.map": "/static/css/main.22b891d8.css.map",
+    "main.cab5463c.js.map": "/static/js/main.cab5463c.js.map"
   },
   "entrypoints": [
     "static/css/main.22b891d8.css",
-    "static/js/main.e0bf7a7b.js"
+    "static/js/main.cab5463c.js"
   ]
 }
