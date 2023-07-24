@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bravo/static/css/main.22b891d8.css",
-    "main.js": "/bravo/static/js/main.00709ee3.js",
+    "main.js": "/bravo/static/js/main.a3b4cc34.js",
     "static/media/profilebg1.png": "/bravo/static/media/profilebg1.78c3f2d177cf883621e0.png",
     "static/media/your-logo.png": "/bravo/static/media/your-logo.78c3f2d177cf883621e0.png",
     "static/media/gold.jpg": "/bravo/static/media/gold.0bf214199d13a01dd5fc.jpg",
@@ -11,10 +11,10 @@
     "static/media/diamond.jpg": "/bravo/static/media/diamond.b7c720065cb57da0d177.jpg",
     "index.html": "/bravo/index.html",
     "main.22b891d8.css.map": "/bravo/static/css/main.22b891d8.css.map",
-    "main.00709ee3.js.map": "/bravo/static/js/main.00709ee3.js.map"
+    "main.a3b4cc34.js.map": "/bravo/static/js/main.a3b4cc34.js.map"
   },
   "entrypoints": [
     "static/css/main.22b891d8.css",
-    "static/js/main.00709ee3.js"
+    "static/js/main.a3b4cc34.js"
   ]
 }
