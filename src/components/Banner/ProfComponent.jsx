@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import styled from "styled-components";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { FaFacebook, FaTwitter, FaTelegram, FaDiscord } from "react-icons/fa";
+// import { AiOutlineInstagram } from "react-icons/ai";
+// import { FaFacebook, FaTwitter, FaTelegram, FaDiscord } from "react-icons/fa";
+import{FaTwitter} from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import profile from '../../img/profilebg1.png'
 
-const token_address = '0xfb5b838b6cfeedc2873ab27866079ac55363d37e';
+const token_address = '0x361556a23192794fc98771d5a6261caaa2cefb2c';
 const url = `https://api.coingecko.com/api/v3/simple/token_price/binance-smart-chain?contract_addresses=${token_address}&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true`;
 
 const ProfComponent = () => {
@@ -48,23 +49,23 @@ const ProfComponent = () => {
             Develop a world class memecoin with best in class burn feature. We are starting with a meme project but we have big plans.
           </p>
           <Data>
-            <div className="badge-container-price">
+            {/* <div className="badge-container-price">
               <h2>Address: {token_address}</h2>
-            </div>
+            </div> */}
             <br />
             <div className="badge-container-price">
               <h2>Total Supply: 21,000,000,000,000</h2>
             </div>
             <br />
             <div className="badge-container-price">
-              <h2>Market Cap: ${data[token_address].usd_market_cap.toLocaleString()}</h2>
+               <h2>Market Cap: Coming Soon ...{/*${data[token_address].usd_market_cap.toLocaleString()}*/}</h2> 
             </div>
             <br />
             <div className="badge-container-price" style={{ display: 'flex' }}>
-              <h2 style={{ display: 'inline' }}>Price:</h2>
-              <h2 className={`${data[token_address].usd_24h_change >= 0 ? 'positive' : 'negative'}`} style={{ display: 'inline', marginLeft: '1rem' }}>
+              <h2 style={{ display: 'inline' }}>Price: Coming Soon ...</h2>
+              {/* <h2 className={`${data[token_address].usd_24h_change >= 0 ? 'positive' : 'negative'}`} style={{ display: 'inline', marginLeft: '1rem' }}>
                 ${data[token_address].usd} ({data[token_address].usd_24h_change >= 0 ? '+' : ''} {data[token_address].usd_24h_change.toLocaleString()}%)
-              </h2>
+              </h2> */}
             </div>
           </Data>
         </Texts>
@@ -78,7 +79,7 @@ const ProfComponent = () => {
           <Social>
             <p>Check out our social media:</p>
             <div className="social-icons">
-              <span>
+              {/* <span>
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                   <AiOutlineInstagram />
                 </a>
@@ -87,13 +88,13 @@ const ProfComponent = () => {
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                   <FaFacebook />
                 </a>
-              </span>
+              </span> */}
               <span>
                 <a href="https://twitter.com/aicrocmemecoin" target="_blank" rel="noopener noreferrer">
                   <FaTwitter />
                 </a>
               </span>
-              <span>
+              {/* <span>
                 <a href="https://www.telegram.com/" target="_blank" rel="noopener noreferrer">
                   <FaTelegram />
                 </a>
@@ -102,7 +103,7 @@ const ProfComponent = () => {
                 <a href="https://www.discord.com/" target="_blank" rel="noopener noreferrer">
                   <FaDiscord />
                 </a>
-              </span>
+              </span> */}
             </div>
           </Social>
           <button onClick={() => window.open('https://bscscan.com/address/0x361556a23192794fc98771d5a6261caaa2cefb2c', '_blank', 'noopener,noreferrer')}>

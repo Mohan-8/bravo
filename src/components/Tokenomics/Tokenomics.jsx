@@ -4,6 +4,7 @@ import { PieChart } from 'react-minimal-pie-chart';
 
 
 
+
 const timelineData = [
   {
     text: 'Token Creation',
@@ -145,7 +146,7 @@ const Tokenomics = () => {
           lineWidth={30}
           startAngle={270}
           viewBoxSize={[100, 100]}
-          style={{ width: '350px', height: '350px', margin: '20px auto' }}
+          style={{ width: '350px', height: '350px', margin: '20px auto',':hover':'margin: 30px auto' }}
         />
          <StyledDiv>AICROC</StyledDiv>
         <ChartLabel>
@@ -258,7 +259,6 @@ const ChartContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
 `
 const ChartLabel = styled.div`
   margin-top: 20px;

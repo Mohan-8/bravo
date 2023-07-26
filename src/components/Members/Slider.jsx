@@ -74,7 +74,7 @@ const MemberContainer = styled.div`
       height: auto;
       transition: none;
       border-radius: 10px; 
-      border: dotted 2px black;
+      border: dotted 2px cyan;
     }
   }
   
@@ -84,7 +84,7 @@ const MemberContainer = styled.div`
       height: auto;
       transition: none;
       border-radius: 5px; 
-      border: dotted 1px black; 
+      border: dotted 1px cyan; 
     }
   }
   
@@ -94,7 +94,7 @@ const MemberContainer = styled.div`
       height: auto;
       transition: none;
       border-radius: 5px; 
-      border: dotted 1px black; 
+      border: dotted 1px cyan; 
     }
   }
   }
