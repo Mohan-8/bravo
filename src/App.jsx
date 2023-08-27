@@ -1,45 +1,31 @@
-import './App.css';
+import "./App.css";
 import styled from "styled-components";
 import backgroundImage from "./img/bg3.jpg";
-import Header from './components/Banner/Header';
-import ProfComponent from './components/Banner/ProfComponent';
+import Header from "./components/Banner/Header";
+import ProfComponent from "./components/Banner/ProfComponent";
 import Members from "./components/Members/Members";
-import Buy from './components/Buy/Buy';
+import Buy from "./components/Buy/Buy";
 import Buyb from "./components/Buy/Buyb";
-import Tokenomics from './components/Tokenomics/Tokenomics';
-import Footer from './components/Footer/Footer';
-import React, { useState } from "react";
-import LoadingScreen from './components/LoadingScreen';
+import Tokenomics from "./components/Tokenomics/Tokenomics";
+import Footer from "./components/Footer/Footer";
 
 function App() {
-  let [loading, setLoading] = useState(true);
-  const simulateAsyncTask = () => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  };
-  React.useEffect(() => {
-    simulateAsyncTask();
-  }, []);
   return (
-    <div className="app">
-      {loading ? <LoadingScreen /> : null}
-      <Container >
-        <Banner >
-          <Header />
-          <ProfComponent />
-        </Banner >
-        <Buy />
-        <Buyb />
-        <LightColor >
-          <Members />
-        </LightColor>
-        <Tokenomics />
-        <LightColor >
-          <Footer />
-        </LightColor >
-      </Container >
-    </div>
+    <Container>
+      <Banner>
+        <Header />
+        <ProfComponent />
+      </Banner>
+      <Buy />
+      <Buyb />
+      <LightColor>
+        <Members />
+      </LightColor>
+      <Tokenomics />
+      <LightColor>
+        <Footer />
+      </LightColor>
+    </Container>
   );
 }
 
@@ -64,4 +50,3 @@ const LightColor = styled.div`
     height: 100%;
   }
 `;
-
