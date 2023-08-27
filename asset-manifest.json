@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Mohan-8/bravo.git/static/css/main.cb58299a.css",
-    "main.js": "/Mohan-8/bravo.git/static/js/main.bc699477.js",
+    "main.css": "/Mohan-8/bravo.git/static/css/main.08073834.css",
+    "main.js": "/Mohan-8/bravo.git/static/js/main.59620405.js",
     "static/media/your-logo.png": "/Mohan-8/bravo.git/static/media/your-logo.077ca44259d41305aa60.png",
     "static/media/profilebg1.png": "/Mohan-8/bravo.git/static/media/profilebg1.5d472d78ebed05627ab5.png",
     "static/media/2.jpg": "/Mohan-8/bravo.git/static/media/2.c990857db96481da2247.jpg",
@@ -13,11 +13,11 @@
     "static/media/bg3.jpg": "/Mohan-8/bravo.git/static/media/bg3.0974be5f78baac21d7ef.jpg",
     "static/media/ghost.jpg": "/Mohan-8/bravo.git/static/media/ghost.4ead3f315915cc54e5f9.jpg",
     "index.html": "/Mohan-8/bravo.git/index.html",
-    "main.cb58299a.css.map": "/Mohan-8/bravo.git/static/css/main.cb58299a.css.map",
-    "main.bc699477.js.map": "/Mohan-8/bravo.git/static/js/main.bc699477.js.map"
+    "main.08073834.css.map": "/Mohan-8/bravo.git/static/css/main.08073834.css.map",
+    "main.59620405.js.map": "/Mohan-8/bravo.git/static/js/main.59620405.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb58299a.css",
-    "static/js/main.bc699477.js"
+    "static/css/main.08073834.css",
+    "static/js/main.59620405.js"
   ]
 }
