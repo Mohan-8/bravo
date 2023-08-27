@@ -93,6 +93,5 @@ const ArrowUp = styled.div`
   cursor: pointer;
   font-size: 1.3rem;
   font-weight: 700;
-  border-radius: 15px
+  border-radius: 15px;
 `;
-

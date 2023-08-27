@@ -28,39 +28,35 @@ const Header = () => {
         <span>
           <a href="#timeline">Roadmap</a>
         </span>
-        <span>
-          
-        </span>
-        <span>
-          
-        </span>
+        <span></span>
+        <span></span>
       </Nav>
       <div onClick={() => setBar(!bar)} className="bars">
         <div className="bar"></div>
       </div>
       <Button bar={bar}>
-      <button
-            onClick={() =>
-              window.open(
-                "https://pancakeswap.finance/swap?outputCurrency=0xD4e4C95454996D149fE1CAF54Fd443a6A2D64016",
-                "_blank",
-                "noopener,noreferrer"
-              )
-            }
-          >
-            Bsc Trade
-          </button>
-          <button
-            onClick={() =>
-              window.open(
-                "https://baseswap.fi/swap",
-                "_blank",
-                "noopener,noreferrer"
-              )
-            }
-          >
-            Base Trade
-          </button>
+        <button
+          onClick={() =>
+            window.open(
+              "https://pancakeswap.finance/swap?outputCurrency=0xD4e4C95454996D149fE1CAF54Fd443a6A2D64016",
+              "_blank",
+              "noopener,noreferrer"
+            )
+          }
+        >
+          Bsc Trade
+        </button>
+        <button
+          onClick={() =>
+            window.open(
+              "https://baseswap.fi/swap",
+              "_blank",
+              "noopener,noreferrer"
+            )
+          }
+        >
+          Base Trade
+        </button>
         {/* <ConnectWallet theme="dark" btnTitle="Connect-Wallet" /> */}
       </Button>
     </Container>

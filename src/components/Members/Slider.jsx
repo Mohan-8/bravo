@@ -1,27 +1,27 @@
 // Slider.jsx
-import React from 'react';
-import styled from 'styled-components';
-import croc from '../../img/ghost.jpg';
-import croc2 from '../../img/gold.jpg';
-import croc3 from '../../img/diamond.jpg';
-import croc4 from '../../img/infantry.jpg';
+import React from "react";
+import styled from "styled-components";
+import croc from "../../img/ghost.jpg";
+import croc2 from "../../img/gold.jpg";
+import croc3 from "../../img/diamond.jpg";
+import croc4 from "../../img/infantry.jpg";
 
 const data = [
   {
     image: croc,
-    title: "GHOST"
+    title: "GHOST",
   },
   {
     image: croc3,
-    title: "DIAMOND"
+    title: "DIAMOND",
   },
   {
     image: croc2,
-    title: "GOLD"
+    title: "GOLD",
   },
   {
     image: croc4,
-    title: "INFANTRY"
+    title: "INFANTRY",
   },
 ];
 
@@ -37,12 +37,11 @@ const SliderComp = () => {
 
 export default SliderComp;
 
-
 const Member = (props) => {
-  const { image, title = 'Default Title' } = props.item;
+  const { image, title = "Default Title" } = props.item;
   return (
-    <MemberContainer className='member'>
-      <img src={image} alt='member' />
+    <MemberContainer className="member">
+      <img src={image} alt="member" />
       <Title>{title}</Title>
     </MemberContainer>
   );
@@ -101,13 +100,13 @@ const MemberContainer = styled.div`
 `;
 
 const Container = styled.div`
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   @media (max-width: 790px) {
     display: block;
     margin: auto;
     width: 50%;
-  } 
+  }
   @media (max-width: 660px) {
     width: 90%;
   }
@@ -115,8 +114,8 @@ const Container = styled.div`
   @media (max-width: 640px) {
     width: 90%;
   }
-`
+`;
 
 const Title = styled.h1`
-font-size: 1.9rem;
+  font-size: 1.9rem;
 `;

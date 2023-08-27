@@ -10,7 +10,7 @@ const Card = (props) => {
       </span>
       <StyledHead>{title}</StyledHead>
       <p>{disc}</p>
-      <button onClick={() => window.open(link, "_blank")} >{button}</button>
+      <button onClick={() => window.open(link, "_blank")}>{button}</button>
     </Container>
   );
 };
@@ -46,8 +46,8 @@ const Container = styled.div`
     }
   }
 `;
-const StyledHead= styled.h1`
-    font-size: 1.2rem;
-    padding-bottom: 1rem;
-    color: #165cb8;
+const StyledHead = styled.h1`
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  color: #165cb8;
 `;
