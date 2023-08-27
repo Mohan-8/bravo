@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
-import axios from 'axios';
+import axios from "axios";
 import styled from "styled-components";
 // import { AiOutlineInstagram } from "react-icons/ai";
 // import { FaFacebook, FaTwitter, FaTelegram, FaDiscord } from "react-icons/fa";
-import{FaTwitter} from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
-import profile from '../../img/profilebg1.jpg'
+import profile from "../../img/profilebg1.png";
 
-const token_address = '0xD4e4C95454996D149fE1CAF54Fd443a6A2D64016';
-const url = `https://api.coingecko.com/api/v3/simple/token_price/binance-smart-chain?contract_addresses=${token_address}&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true`;
+const token_address_bsc = "0xD4e4C95454996D149fE1CAF54Fd443a6A2D64016";
+const token_address_base = "0x30e68e317ea966972f2f11c340c6740e88c49c3a";
+
+const url = `https://api.coingecko.com/api/v3/simple/token_price/binance-smart-chain?contract_addresses=${token_address_bsc}&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true`;
 
 const ProfComponent = () => {
-
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -24,10 +25,8 @@ const ProfComponent = () => {
       }
     };
 
-    // Fetch data initially
     fetchData();
 
-    // Set up interval to refresh data every 30 seconds
     const intervalId = setInterval(() => {
       fetchData();
     }, 10000);
@@ -36,7 +35,7 @@ const ProfComponent = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  if (!data) return null
+  if (!data) return null;
 
   return (
     <Container id="home">
@@ -46,36 +45,42 @@ const ProfComponent = () => {
           <h3>Revolution in the memecoin world</h3>
           <p>
             Mission of the project <br />
-            Develop a world class memecoin with best in class burn feature. We are starting with a meme project but we have big plans.
+            Develop a world class memecoin with best in class burn feature. We
+            are starting with a meme project but we have big plans.
           </p>
           <Data>
-            {/* <div className="badge-container-price">
-              <h2>Address: {token_address}</h2>
-            </div> */}
+            <div className="badge-container-price">
+              <h2>Bsc Address: {token_address_bsc}</h2>
+            </div>
+            <br />
+            <div className="badge-container-price">
+              <h2>Base Address: {token_address_base}</h2>
+            </div>
             <br />
             <div className="badge-container-price">
               <h2>Total Supply: 21,000,000,000,000</h2>
             </div>
             <br />
             <div className="badge-container-price">
-               <h2>Market Cap: Coming Soon ...{/*${data[token_address].usd_market_cap.toLocaleString()}*/}</h2> 
+              <h2>
+                Market Cap: Coming Soon ...
+                {/*${data[token_address].usd_market_cap.toLocaleString()}*/}
+              </h2>
             </div>
             <br />
-            <div className="badge-container-price" style={{ display: 'flex' }}>
-              <h2 style={{ display: 'inline' }}>Price: Coming Soon ...</h2>
+            <div className="badge-container-price" style={{ display: "flex" }}>
+              <h2 style={{ display: "inline" }}>Price: Coming Soon ...</h2>
               {/* <h2 className={`${data[token_address].usd_24h_change >= 0 ? 'positive' : 'negative'}`} style={{ display: 'inline', marginLeft: '1rem' }}>
                 ${data[token_address].usd} ({data[token_address].usd_24h_change >= 0 ? '+' : ''} {data[token_address].usd_24h_change.toLocaleString()}%)
               </h2> */}
             </div>
+            <br />
           </Data>
         </Texts>
       </Slide>
       <Slide direction="right">
         <Profile>
-          <img
-            src={profile}
-            alt="profile"
-          />
+          <img src={profile} alt="profile" />
           <Social>
             <p>Check out our social media:</p>
             <div className="social-icons">
@@ -90,7 +95,11 @@ const ProfComponent = () => {
                 </a>
               </span> */}
               <span>
-                <a href="https://twitter.com/aicrocmemecoin" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://twitter.com/aicrocmemecoin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaTwitter />
                 </a>
               </span>
@@ -106,16 +115,31 @@ const ProfComponent = () => {
               </span> */}
             </div>
           </Social>
-          <button onClick={() => window.open('https://bscscan.com/address/0xD4e4C95454996D149fE1CAF54Fd443a6A2D64016', '_blank', 'noopener,noreferrer')}>
-            Smart Contract
+          <button
+            onClick={() =>
+              window.open(
+                "https://bscscan.com/address/0xD4e4C95454996D149fE1CAF54Fd443a6A2D64016",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          >
+            Bsc Smart Contract
           </button>
-          <button onClick={() => window.open('https://bscscan.com/token/0xD4e4C95454996D149fE1CAF54Fd443a6A2D64016?a=0x000000000000000000000000000000000000dead', '_blank', 'noopener,noreferrer')}>
-            Burn Address
+          <button
+            onClick={() =>
+              window.open(
+                "https://basescan.org/address/0x30e68e317ea966972f2f11c340c6740e88c49c3a",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          >
+            Base Smart Contract
           </button>
         </Profile>
       </Slide>
     </Container>
-
   );
 };
 
@@ -144,14 +168,19 @@ const Container = styled.div`
     padding: 0.7rem 3rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    margin-right: 10px;
-    margin-left:15px;
+    margin-right: 5px;
+    margin-left: 2px;
     cursor: pointer;
-    background-color: #0ac2cf;
+    background: rgb(180, 246, 252);
+    background: radial-gradient(
+      circle,
+      rgba(180, 246, 252, 1) 0%,
+      rgba(0, 0, 0, 1) 0%
+    );
     border: none;
-    color: #000;
-    font-weight: 500;
-    border-radius:50px 50px 50px 50px;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 50px 50px 50px 50px;
     filter: drop-shadow(0px 10px 10px #01be9551);
     :hover {
       filter: drop-shadow(0px 10px 10px #01be9570);
@@ -223,7 +252,7 @@ const Social = styled.div`
       clip-path: square;
       background-color: #0ac2cf;
       position: relative;
-      border-radius:15px 500px 300px;
+      border-radius: 15px 500px 300px;
       transition: transform 400ms ease-in-out;
       @media (max-width: 640px) {
         width: 2rem;
@@ -251,17 +280,17 @@ const Profile = styled.div`
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {
-      margin-top:1rem;
+      margin-top: 1rem;
       width: 15rem;
     }
 
     @media (max-width: 660px) {
-      margin-top:1rem;
+      margin-top: 1rem;
       width: 15rem;
     }
 
     @media (max-width: 640px) {
-      margin-top:1rem;
+      margin-top: 1rem;
       width: 100%;
     }
   }
@@ -285,11 +314,11 @@ const Data = styled.div`
     filter: drop-shadow(0px 10px 10px #01be9551);
     border-radius: 15px 50px 30px;
   }
-  
+
   .positive {
     color: green;
   }
-  
+
   .negative {
     color: red;
   }

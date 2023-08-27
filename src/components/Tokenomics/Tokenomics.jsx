@@ -1,9 +1,14 @@
 import styled from 'styled-components'
 import { Slide } from 'react-awesome-reveal';
 import { PieChart } from 'react-minimal-pie-chart';
+import C1 from '../../img/ch/1.jpg';
+import C2 from '../../img/ch/2.jpg';
 
 
-
+const im=[
+  {img1:C1 },
+  {img2:C2}
+]
 
 const timelineData = [
   {
@@ -36,7 +41,7 @@ const timelineData = [
   },
   {
     text: 'Website Design',
-    date: 'August 2023',
+    date: 'July 30 2023',
     category: {
       tag: 'DONE',
       color: '#018f69'
@@ -45,33 +50,40 @@ const timelineData = [
       url: '#',
       text: 'See website'
     }
-  },
+  }, {
+    text: 'Listing & Trading',
+    date: 'August 2023',
+    category: {
+      tag: 'Done',
+      color: '#018f69'
+    }
+  }
+  ,
   {
     text: 'Community Giveaway',
     date: 'August 2023',
     category: {
-      tag: 'DONE',
-      color: '#FFDB14'
+      tag: 'Done',
+      color: '#018f69'
     }
-  },
+  }, 
   {
-    text: 'Listing & Trading',
+    text: 'Token Launch in Base',
     date: 'August 2023',
     category: {
-      tag: 'DONE',
-      color: '#FFDB14'
+      tag: 'Done',
+      color: '#018f69'
+    }
+  },{
+    text: 'Mega Burn',
+    date: 'August 2023',
+    category: {
+      tag: 'Done',
+      color: '#018f69'
     }
   },
-  {
+    {
     text: 'Staking',
-    date: 'Soon',
-    category: {
-      tag: 'TO DO',
-      color: '#e17b77'
-    },
-  },
-  {
-    text: 'Mega Burn',
     date: 'Soon',
     category: {
       tag: 'TO DO',
@@ -131,8 +143,10 @@ const Tokenomics = () => {
     { title: 'Marketing', value: 10, key1:'10%', color: '#33FF57' },
     { title: 'Community Airdrop', value: 17.5, key1:'17.5%', color: '#5733FF' },
     { title: 'Burn', value: 17.5, key1:'17.5%', color: '#33A0FF' },
-    { title: 'Liquidity', value: 40, key1:'20%', color: '#FF33A0' },
-    { title: 'Staking', value: 40, key1:'20%', color: '#EE33A0' }
+    { title: 'Liquidity', value: 40, key1:'40%', color: '#FF33A0' },
+  ];
+  const data1 = [
+    { title: 'Liquidity', value: 100, key1:'100%', color: '#33FF57' },
   ];
   return (
     <Container id='tokenomic'>
@@ -140,18 +154,29 @@ const Tokenomics = () => {
       <Slide direction="left"><hr />
         <h1>Tokenomics</h1>
         <br />
-        <h3> 
+        <h3><he><span><h5>Bsc Chart</h5></span><span><h5>Base Chart</h5></span></he> 
         <ChartContainer>
-        <PieChart
-          data={data}
-          lineWidth={30}
-          startAngle={270}
-          viewBoxSize={[100, 100]}
-          style={{ width: '350px', height: '350px', margin: '20px auto',':hover':'margin: 30px auto' }}
-        />
-         <StyledDiv>CROC</StyledDiv>
+        <ChartBackground image={im[0].img1}>
+          <PieChart
+            data={data}
+            lineWidth={30}
+            startAngle={270}
+            viewBoxSize={[100, 100]}
+            style={{ width: '100%', height: '100%' }}
+          />
+        </ChartBackground>
+        <ChartBackground image={im[1].img2}>
+          <PieChart
+            data={data1}
+            lineWidth={30}
+            startAngle={270}
+            viewBoxSize={[100, 100]}
+            style={{ width: '100%', height: '100%' }}
+          />
+          </ChartBackground>
+         </ChartContainer>
         <ChartLabel>
-          <h2>Total supply - 21 Trillion</h2>
+          <span><h2>Total supply - 21 Trillion</h2><StyledHeading>BSC Chart</StyledHeading>
           {data.map((item) => (
             <LabelItem key={item.title}>
               <LabelColor color={item.color} />
@@ -159,8 +184,16 @@ const Tokenomics = () => {
               <LabelText>{item.title}</LabelText>
             </LabelItem>
           ))}
+</span><span><h2>Total supply - 21 Trillion</h2><StyledHeading>Base chart</StyledHeading>
+          {data1.map((item) => (
+            <LabelItem key={item.title}>
+              <LabelColor color={item.color} />
+              <LabelText>{item.key1}</LabelText>
+              <LabelText>{item.title}</LabelText>
+            </LabelItem>
+          ))}</span>
         </ChartLabel>
-      </ChartContainer></h3>
+      </h3>
       </Slide>
       <br /><hr />
       <div id="timeline">
@@ -171,7 +204,7 @@ const Tokenomics = () => {
   )
 }
 
-export default Tokenomics
+export default Tokenomics;
 
 const Container = styled.div`
     width: 70%;
@@ -210,6 +243,18 @@ const Container = styled.div`
       text-align: center;
       color: #000;
   }
+  he{
+    display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  position: relative;
+    font-size:30px;
+  }
+
     li{
       word-break: break-word;
       margin-top: 0.5rem;
@@ -255,18 +300,40 @@ const Container = styled.div`
         margin: 0;
     }
 `
+
 const ChartContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+display: flex;
+align-items: center;
+justify-content: space-around;
+max-width: 1480px;
+width: 100%;
+margin: 0 auto;
+padding: 1.5rem 0;
+position: relative;
 `
+
+const ChartBackground = styled.div`
+  width: 350px;
+  height: 350px;
+  background-color: #f0f0f0; 
+  background-image: url(${props => props.image}); 
+  background-size: 19rem;
+  background-position: bottom;
+  border-radius:350px;
+`;
+
 const ChartLabel = styled.div`
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
+display: flex;
   align-items: flex-start;
+  justify-content: space-evenly;
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  position: relative;
+ 
 `
+
 const LabelItem = styled.div`
   display: flex;
   align-items: center;
@@ -299,33 +366,11 @@ const LabelColor = styled.div`
       }
   
 `
-
+const StyledHeading = styled.h1`
+  color: #165cb8;
+`;
 const LabelText = styled.p`
   color: white;
   font-size: 14px;
 `
-const StyledDiv = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 32%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
 
-  @media (max-width: 790px) {
-  top: 27%;
-  left: 49%;
-  }
-
-  @media (max-width: 660px) {
-    top: 25%;
-    left: 49%;
-  }
-
-  @media (max-width: 640px) {
-    top: 18%;
-    left: 49%;
-  }
-`
