@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/bravo/static/css/main.22b891d8.css",
-    "main.js": "/bravo/static/js/main.2256dd4e.js",
-    "static/media/profilebg1.png": "/bravo/static/media/profilebg1.78c3f2d177cf883621e0.png",
-    "static/media/your-logo.png": "/bravo/static/media/your-logo.077ca44259d41305aa60.png",
-    "static/media/gold.jpg": "/bravo/static/media/gold.0bf214199d13a01dd5fc.jpg",
-    "static/media/infantry.jpg": "/bravo/static/media/infantry.9f9700fc76e2cd4e6137.jpg",
-    "static/media/bg3.jpg": "/bravo/static/media/bg3.0974be5f78baac21d7ef.jpg",
-    "static/media/ghost.jpg": "/bravo/static/media/ghost.4ead3f315915cc54e5f9.jpg",
-    "static/media/diamond.jpg": "/bravo/static/media/diamond.b7c720065cb57da0d177.jpg",
-    "index.html": "/bravo/index.html",
-    "main.22b891d8.css.map": "/bravo/static/css/main.22b891d8.css.map",
-    "main.2256dd4e.js.map": "/bravo/static/js/main.2256dd4e.js.map"
+    "main.css": "/static/css/main.a3b9cce1.css",
+    "main.js": "/static/js/main.d622da5f.js",
+    "static/media/your-logo.png": "/static/media/your-logo.077ca44259d41305aa60.png",
+    "static/media/profilebg1.png": "/static/media/profilebg1.5d472d78ebed05627ab5.png",
+    "static/media/2.jpg": "/static/media/2.c990857db96481da2247.jpg",
+    "static/media/diamond.jpg": "/static/media/diamond.c19c5264a0a160cc375a.jpg",
+    "static/media/Aicroc.png": "/static/media/Aicroc.e973d730a8ce93c05242.png",
+    "static/media/1.jpg": "/static/media/1.75eaef222d6b0a8e954a.jpg",
+    "static/media/gold.jpg": "/static/media/gold.0bf214199d13a01dd5fc.jpg",
+    "static/media/infantry.jpg": "/static/media/infantry.9f9700fc76e2cd4e6137.jpg",
+    "static/media/bg3.jpg": "/static/media/bg3.0974be5f78baac21d7ef.jpg",
+    "static/media/ghost.jpg": "/static/media/ghost.4ead3f315915cc54e5f9.jpg",
+    "index.html": "/index.html",
+    "main.a3b9cce1.css.map": "/static/css/main.a3b9cce1.css.map",
+    "main.d622da5f.js.map": "/static/js/main.d622da5f.js.map"
   },
   "entrypoints": [
-    "static/css/main.22b891d8.css",
-    "static/js/main.2256dd4e.js"
+    "static/css/main.a3b9cce1.css",
+    "static/js/main.d622da5f.js"
   ]
 }
