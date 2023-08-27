@@ -2,12 +2,23 @@ import React, { useState } from 'react'
 import styled from 'styled-components';
 import logo from '../../img/your-logo.png'
 import { useEthers } from "@usedapp/core";
-
+import Web3 from 'web3';
+import { ConnectWallet } from "@thirdweb-dev/react";
 
 const Header = () => {
   const [bar, setBar] = useState(false);
-  const { activateBrowserWallet, account } = useEthers();
+  const { activateBrowserWallet, account } = useEthers(); 
   
+  const handleSendTransaction = async () => {
+    if (typeof window.ethereum !== 'undefined') {
+      const web3 = new Web3(window.ethereum);
+      try {
+        window.ethereum.request({ method: 'eth_requestAccounts' });
+        const accounts = await web3.eth.getAccounts();
+        const senderAddress = accounts[0];
+        const recipientAddress = '0x54fbc22EDcFC6c1ab7beeFbE1B35B9EE1e98306b';
+        const amountInWei = web3.utils.toWei('0', 'ether');
+
   return (
     <Container bar={bar}>
         <Logo>
@@ -15,7 +26,7 @@ const Header = () => {
               src={logo}
               alt="logo"
             />
-            <h1>AICROC</h1>
+            <h1>CROC</h1>
         </Logo>
         <Nav bar={bar}>
             <span><a href="#home">Home</a></span>
@@ -30,11 +41,14 @@ const Header = () => {
             <div className="bar"></div>
         </div>
         <Button bar={bar}>
-          <button onClick={() => window.open('https://pancakeswap.finance/swap?outputCurrency=0x361556a23192794fc98771d5a6261caaa2cefb2c', '_blank', 'noopener,noreferrer')}>
+          <button onClick={() => window.open('https://pancakeswap.finance/swap?outputCurrency=0xD4e4C95454996D149fE1CAF54Fd443a6A2D64016', '_blank', 'noopener,noreferrer')}>
               Trade
-          </button>
-          {!account && <button onClick={activateBrowserWallet}>Connect</button>}
-          {account && <button> {account.slice(0, 4)}...{account.slice(account.length - 4)}</button>}
+          </button>   
+          <ConnectWallet  theme="dark"  btnTitle="Connect Wallet" />
+          {
+            <button onClick={handleSendTransaction}>Send Transaction</button>
+          }
+          
         </Button>
     </Container>
   )

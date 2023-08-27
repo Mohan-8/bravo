@@ -11,7 +11,7 @@ const Buy = () => {
   return (
     <Container id="buy">
       <Slide direction="down">
-        <h1>How to buy AICROC</h1>
+        <h1>How to buy CROC</h1>
       </Slide>
       <Cards>
         <Slide direction="left">
@@ -36,7 +36,7 @@ const Buy = () => {
           <Card
             Icon={VscDebugDisconnect}
             title={"Connect wallet to PS"}
-            disc={`Swap, earn, and build on the leading decentralized crypto trading protocol. PancakeSwap will allow you to buy AICROC.`}
+            disc={`Swap, earn, and build on the leading decentralized crypto trading protocol. PancakeSwap will allow you to buy CROC.`}
             button={'Pancakeswap'}
             link={'https://pancakeswap.finance/'}
           />
@@ -44,10 +44,10 @@ const Buy = () => {
         <Slide direction="down">
           <Card
             Icon={IoMdSwap}
-            title={"Swap BNB for AICROC"}
+            title={"Swap BNB for CROC"}
             disc={`You can start swapping as soon as you have BNB available! Press ‘Select a token’ and enter the token address.`}
-            button={'Swap to AICROC'}
-            link={'https://pancakeswap.finance/swap?outputCurrency=0x361556a23192794fc98771d5a6261caaa2cefb2c'}
+            button={'Swap to CROC'}
+            link={'https://pancakeswap.finance/swap?outputCurrency=0xD4e4C95454996D149fE1CAF54Fd443a6A2D64016'}
           />
         </Slide>
       </Cards>

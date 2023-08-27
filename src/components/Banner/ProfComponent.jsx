@@ -5,9 +5,9 @@ import styled from "styled-components";
 // import { FaFacebook, FaTwitter, FaTelegram, FaDiscord } from "react-icons/fa";
 import{FaTwitter} from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
-import profile from '../../img/profilebg1.png'
+import profile from '../../img/profilebg1.jpg'
 
-const token_address = '0x361556a23192794fc98771d5a6261caaa2cefb2c';
+const token_address = '0xD4e4C95454996D149fE1CAF54Fd443a6A2D64016';
 const url = `https://api.coingecko.com/api/v3/simple/token_price/binance-smart-chain?contract_addresses=${token_address}&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true`;
 
 const ProfComponent = () => {
@@ -42,7 +42,7 @@ const ProfComponent = () => {
     <Container id="home">
       <Slide direction="left">
         <Texts>
-          <h1>AICROC</h1>
+          <h1>AICROC(CROC)</h1>
           <h3>Revolution in the memecoin world</h3>
           <p>
             Mission of the project <br />
@@ -106,10 +106,10 @@ const ProfComponent = () => {
               </span> */}
             </div>
           </Social>
-          <button onClick={() => window.open('https://bscscan.com/address/0x361556a23192794fc98771d5a6261caaa2cefb2c', '_blank', 'noopener,noreferrer')}>
+          <button onClick={() => window.open('https://bscscan.com/address/0xD4e4C95454996D149fE1CAF54Fd443a6A2D64016', '_blank', 'noopener,noreferrer')}>
             Smart Contract
           </button>
-          <button onClick={() => window.open('https://bscscan.com/token/0x361556a23192794fc98771d5a6261caaa2cefb2c?a=0x000000000000000000000000000000000000dead', '_blank', 'noopener,noreferrer')}>
+          <button onClick={() => window.open('https://bscscan.com/token/0xD4e4C95454996D149fE1CAF54Fd443a6A2D64016?a=0x000000000000000000000000000000000000dead', '_blank', 'noopener,noreferrer')}>
             Burn Address
           </button>
         </Profile>

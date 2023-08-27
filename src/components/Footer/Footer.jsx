@@ -14,7 +14,7 @@ const Footer = () => {
     <Container id="footer">
       <Profile>
         <Slide direction="left" delay={1}>
-          <h2>Copyright © 2023 - AICROC</h2>
+          <h2>Copyright © 2023 - CROC</h2>
         </Slide>
       </Profile>
       <Fade>

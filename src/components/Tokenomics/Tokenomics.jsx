@@ -36,7 +36,7 @@ const timelineData = [
   },
   {
     text: 'Website Design',
-    date: 'July 30 2023',
+    date: 'August 2023',
     category: {
       tag: 'DONE',
       color: '#018f69'
@@ -47,23 +47,23 @@ const timelineData = [
     }
   },
   {
-    text: 'NFT Sale',
-    date: 'July - August',
-    category: {
-      tag: 'IN PROGRESS',
-      color: '#FFDB14'
-    }
-  },
-  {
     text: 'Community Giveaway',
     date: 'August 2023',
     category: {
-      tag: 'IN PROGRESS',
+      tag: 'DONE',
       color: '#FFDB14'
     }
   },
   {
     text: 'Listing & Trading',
+    date: 'August 2023',
+    category: {
+      tag: 'DONE',
+      color: '#FFDB14'
+    }
+  },
+  {
+    text: 'Staking',
     date: 'Soon',
     category: {
       tag: 'TO DO',
@@ -71,7 +71,7 @@ const timelineData = [
     },
   },
   {
-    text: 'Staking',
+    text: 'Mega Burn',
     date: 'Soon',
     category: {
       tag: 'TO DO',
@@ -131,7 +131,8 @@ const Tokenomics = () => {
     { title: 'Marketing', value: 10, key1:'10%', color: '#33FF57' },
     { title: 'Community Airdrop', value: 17.5, key1:'17.5%', color: '#5733FF' },
     { title: 'Burn', value: 17.5, key1:'17.5%', color: '#33A0FF' },
-    { title: 'Liquidity', value: 40, key1:'40%', color: '#FF33A0' },
+    { title: 'Liquidity', value: 40, key1:'20%', color: '#FF33A0' },
+    { title: 'Staking', value: 40, key1:'20%', color: '#EE33A0' }
   ];
   return (
     <Container id='tokenomic'>
@@ -148,7 +149,7 @@ const Tokenomics = () => {
           viewBoxSize={[100, 100]}
           style={{ width: '350px', height: '350px', margin: '20px auto',':hover':'margin: 30px auto' }}
         />
-         <StyledDiv>AICROC</StyledDiv>
+         <StyledDiv>CROC</StyledDiv>
         <ChartLabel>
           <h2>Total supply - 21 Trillion</h2>
           {data.map((item) => (
