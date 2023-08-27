@@ -1,18 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import logo from "../../img/your-logo.png";
 // import { ConnectWallet } from "@thirdweb-dev/react";
 
 const Header = () => {
-  const [bar, setBar] = useState(false);
-
   return (
-    <Container bar={bar}>
+    <Container>
       <Logo>
         <img src={logo} alt="logo" />
         <h1>CROC</h1>
       </Logo>
-      <Nav bar={bar}>
+      <Nav>
         <span>
           <a href="#home">Home</a>
         </span>
@@ -31,10 +29,10 @@ const Header = () => {
         <span></span>
         <span></span>
       </Nav>
-      <div onClick={() => setBar(!bar)} className="bars">
+      <div className="bars">
         <div className="bar"></div>
       </div>
-      <Button bar={bar}>
+      <Button>
         <button
           onClick={() =>
             window.open(

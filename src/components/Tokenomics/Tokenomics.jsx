@@ -4,8 +4,6 @@ import { PieChart } from "react-minimal-pie-chart";
 import C1 from "../../img/ch/1.jpg";
 import C2 from "../../img/ch/2.jpg";
 
-const im = [{ img1: C1 }, { img2: C2 }];
-
 const timelineData = [
   {
     text: "Token Creation",
@@ -167,16 +165,16 @@ const Tokenomics = () => {
         <h1>Tokenomics</h1>
         <br />
         <h3>
-          <he>
+          <He>
             <span>
               <h5>Bsc Chart</h5>
             </span>
             <span>
               <h5>Base Chart</h5>
             </span>
-          </he>
+          </He>
           <ChartContainer>
-            <ChartBackground image={im[0].img1}>
+            <StyledImage>
               <PieChart
                 data={data}
                 lineWidth={30}
@@ -184,8 +182,8 @@ const Tokenomics = () => {
                 viewBoxSize={[100, 100]}
                 style={{ width: "100%", height: "100%" }}
               />
-            </ChartBackground>
-            <ChartBackground image={im[1].img2}>
+            </StyledImage>
+            <StyledImag>
               <PieChart
                 data={data1}
                 lineWidth={30}
@@ -193,7 +191,7 @@ const Tokenomics = () => {
                 viewBoxSize={[100, 100]}
                 style={{ width: "100%", height: "100%" }}
               />
-            </ChartBackground>
+            </StyledImag>
           </ChartContainer>
           <ChartLabel>
             <span>
@@ -270,17 +268,6 @@ const Container = styled.div`
     text-align: center;
     color: #000;
   }
-  he {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 1480px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1.5rem 0;
-    position: relative;
-    font-size: 30px;
-  }
 
   li {
     word-break: break-word;
@@ -345,11 +332,18 @@ const ChartContainer = styled.div`
   position: relative;
 `;
 
-const ChartBackground = styled.div`
+const StyledImage = styled.div`
+  background-image: url(${C1});
   width: 350px;
   height: 350px;
-  background-color: #f0f0f0;
-  background-image: url(${(props) => props.image});
+  background-size: 19rem;
+  background-position: bottom;
+  border-radius: 350px;
+`;
+const StyledImag = styled.div`
+  background-image: url(${C2});
+  width: 350px;
+  height: 350px;
   background-size: 19rem;
   background-position: bottom;
   border-radius: 350px;
@@ -383,7 +377,17 @@ const LabelItem = styled.div`
     align-items: flex-start;
   }
 `;
-
+const He = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  position: relative;
+  font-size: 30px;
+`;
 const LabelColor = styled.div`
   width: 12px;
   height: 12px;
