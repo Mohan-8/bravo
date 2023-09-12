@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/Mohan-8/bravo.git/static/css/main.08073834.css",
-    "main.js": "/Mohan-8/bravo.git/static/js/main.59620405.js",
-    "static/media/your-logo.png": "/Mohan-8/bravo.git/static/media/your-logo.077ca44259d41305aa60.png",
-    "static/media/profilebg1.png": "/Mohan-8/bravo.git/static/media/profilebg1.5d472d78ebed05627ab5.png",
-    "static/media/2.jpg": "/Mohan-8/bravo.git/static/media/2.c990857db96481da2247.jpg",
-    "static/media/diamond.jpg": "/Mohan-8/bravo.git/static/media/diamond.c19c5264a0a160cc375a.jpg",
-    "static/media/Aicroc.png": "/Mohan-8/bravo.git/static/media/Aicroc.e973d730a8ce93c05242.png",
-    "static/media/1.jpg": "/Mohan-8/bravo.git/static/media/1.75eaef222d6b0a8e954a.jpg",
-    "static/media/gold.jpg": "/Mohan-8/bravo.git/static/media/gold.0bf214199d13a01dd5fc.jpg",
-    "static/media/infantry.jpg": "/Mohan-8/bravo.git/static/media/infantry.9f9700fc76e2cd4e6137.jpg",
-    "static/media/bg3.jpg": "/Mohan-8/bravo.git/static/media/bg3.0974be5f78baac21d7ef.jpg",
-    "static/media/ghost.jpg": "/Mohan-8/bravo.git/static/media/ghost.4ead3f315915cc54e5f9.jpg",
-    "index.html": "/Mohan-8/bravo.git/index.html",
-    "main.08073834.css.map": "/Mohan-8/bravo.git/static/css/main.08073834.css.map",
-    "main.59620405.js.map": "/Mohan-8/bravo.git/static/js/main.59620405.js.map"
+    "main.css": "/static/css/main.d429dadd.css",
+    "main.js": "/static/js/main.d8c0f55c.js",
+    "static/media/your-logo.png": "/static/media/your-logo.077ca44259d41305aa60.png",
+    "static/media/profilebg1.png": "/static/media/profilebg1.5d472d78ebed05627ab5.png",
+    "static/media/diamond.jpg": "/static/media/diamond.c19c5264a0a160cc375a.jpg",
+    "static/media/Aicroc.png": "/static/media/Aicroc.e973d730a8ce93c05242.png",
+    "static/media/1.jpg": "/static/media/1.75eaef222d6b0a8e954a.jpg",
+    "static/media/gold.jpg": "/static/media/gold.0bf214199d13a01dd5fc.jpg",
+    "static/media/infantry.jpg": "/static/media/infantry.9f9700fc76e2cd4e6137.jpg",
+    "static/media/bg3.jpg": "/static/media/bg3.0974be5f78baac21d7ef.jpg",
+    "static/media/ghost.jpg": "/static/media/ghost.4ead3f315915cc54e5f9.jpg",
+    "index.html": "/index.html",
+    "main.d429dadd.css.map": "/static/css/main.d429dadd.css.map",
+    "main.d8c0f55c.js.map": "/static/js/main.d8c0f55c.js.map"
   },
   "entrypoints": [
-    "static/css/main.08073834.css",
-    "static/js/main.59620405.js"
+    "static/css/main.d429dadd.css",
+    "static/js/main.d8c0f55c.js"
   ]
 }
